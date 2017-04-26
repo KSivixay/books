@@ -54,6 +54,7 @@ $(document).ready(function(){
   }
   $('#list').html(titles.join(''));
   $(document).on('click', 'li', function(e){
+    $('h2').remove();
     var currentBook = books[e.currentTarget.className -1];
     $('#poster').attr('src', currentBook.cover);
     $('#title').html('Title: ' + currentBook.title);
