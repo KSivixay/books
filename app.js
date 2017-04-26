@@ -43,7 +43,17 @@ var books = [
     author: "Ao Jumonji",
     publish: 2016,
     lastRead: new Date()
+  },
+  {
+    book_id: "6",
+    title: "God Eater",
+    cover: "https://myanimelist.cdn-dena.com/images/anime/7/73852.jpg",
+    description: "God Eater is an anime adaptation of the God Eater video game series. It is animated by Ufotable and began airing on July 12, 2015 after a one-week delay.",
+    author: "Takayuki Hirao",
+    publish: 2015,
+    lastRead: new Date()
      }
+
 ]
 
 var titles = [];
