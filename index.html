@@ -7,10 +7,22 @@
   </head>
   <body>
     <header>Saeng's Anime Recommendations</header>
-    <ol class="list" id="list">
+
+    <div class="list">
+    <ol class="list-items" id="list"></ol>
+    <form class="submit" action="index.html" method="post" id="newBook" name="newBook">
+        <h3>Add a new book</h3>
+        <input type="text" name="book_id" placeholder="New ID">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="cover" placeholder="Cover">
+        <input type="textarea" name="description" placeholder="Description">
+        <input type="text" name="author" placeholder="Author">
+        <input type="text" name="publish" placeholder="Publish Date">
+        <input type="submit" name="submit" placeholder="Add to list" id="submitter">
+      </form>
+    </div>
 
     </ol>
-
     <h2>Please select an anime from the list.</h2>
 
     <ol class="details">
@@ -20,7 +32,7 @@
       <li id="publish"></li>
       <li id="description"></li>
       <li id="lastRead"></li>
-      <a href="" id="watchOnline"></a>
+      <a href="" id="watchOnline" target="_blank"></a>
     </ol>
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
